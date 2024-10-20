@@ -1,0 +1,375 @@
+:root {
+    --bg-pink: #F5A3C9;
+    --footer: #f485b9;
+    --link-unvisited: #b81c65;
+    --hover: #e05399;
+    --text: #41005f;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+link {
+    color: var(--link-unvisited);
+
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+    padding-bottom: 60px !important;
+    background-color: var(--bg-pink);
+    color: var(--text);
+    text-align: center;
+    overflow: auto;
+    overflow-x: hidden;
+    
+}
+
+body {
+    background-image: url(/img/ANGUS_transparent_pink.png);
+    animation: bgScroll 60s linear infinite;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    image-rendering: pixelated;
+}
+
+@keyframes bgScroll {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: -1920px;
+    }
+}
+  
+header h1 {
+    margin: 1%;
+    text-shadow: -3.5px -1px 0 white,
+                  3.5px -1px 0 white,
+                 -3.5px  1px 0 white,
+                  3.5px  1px 0 white;
+    color: var(--text);
+}
+
+.webRingLinkLeft {
+    position: absolute;
+    left: 30px;
+    margin-top: 1.5%;
+    font-size: 20px;
+    color: var(--link-unvisited) !important;
+    text-shadow:
+    -1px -1px white,  
+    1px -1px white,
+    -1px  1px white,
+    1px  1px white;
+}
+
+.webRingLinkRight {
+    position: absolute;
+    right: 30px;
+    margin-top: 1.5%;
+    font-size: 20px;
+    color: var(--link-unvisited) !important;
+    text-shadow:
+    -1px -1px white,  
+    1px -1px white,
+    -1px  1px white,
+    1px  1px white;
+}
+
+.webRingLinkLeft span, .webRingLinkRight span {
+    font-size: 25px;
+}
+
+a:link {
+    color: var(--link-unvisited);
+    text-decoration: none;
+}
+
+nav {
+    font-size: large;
+}
+
+nav a:hover {
+    color: var(--hover);
+}
+
+hr {
+    color: var(--text);
+    opacity: 30%;
+    width: 96%;
+}
+
+
+footer {
+    position: absolute !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    padding: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    min-height: 20px;
+    background-color: var(--footer);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-anchor:initial;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: nowrap; */
+}
+
+.anguscorner {
+    position: absolute;
+    bottom: 62px;
+    left: 40px; 
+    z-index: 99 !important;
+    scale: 1.2;
+    background: url(/img/angus_mouse_corner.png) no-repeat;
+    width: 190px;
+    height: 59px;
+}
+
+.anguscorner:hover {
+    background: url(/img/angus_mouse_corner-surprised.png) no-repeat;
+}
+
+.paragraph {
+    background-color: white;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    padding: 20px;
+    text-align: left;
+    display: flexbox;
+}
+
+.bottom-left, .top-left, .top-right, .bottom-right, .centered {
+    position: absolute;
+}
+
+.centered {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.badge-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge-container span {
+    margin: 5px 2px;
+}
+
+.badge-text {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--link-unvisited);
+    font-size: 12px;
+    white-space: nowrap;
+    text-decoration: underline;
+    /* i hate this footer so fucking much */
+}
+
+.badge-text:hover {
+    color: var(--hover);
+}
+
+.blog {
+    background-color: white;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    padding: 20px;
+    text-align: left;
+    display: flexbox;
+}
+
+.blog a:link {
+    color: var(--link-unvisited);
+}
+
+.blog .profile-photo {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.blog .header {
+    font-size: 130%;
+    display: flex;
+    align-items: center;
+}
+
+.blog .title-subtitle {
+    flex: 1;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.blog .title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.blog .alttitle {
+    margin: 0;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+.blog .subtitle {
+    padding-left: +10px;
+    font-size: 80%;
+}
+
+.blog .text-container {
+    margin-top: -5px;
+}
+
+.blog hr {
+    margin: 20px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.blog p {
+    font-size: 17.5px;
+    padding: 10px;
+    padding-bottom: unset;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden !important;
+        margin-bottom: 50% !important;
+    }
+    .paragraph {
+        width: 80% !important;
+    }
+    .blog {
+        width: 80% !important;
+    }
+    .scrollingBG {
+        background-size: cover;
+    }
+
+    nav {
+        margin-bottom: 40px;
+    }
+
+    footer {
+        position: absolute !important;
+        max-width: max-content !important;
+        overflow: hidden !important;
+    }
+
+    .anguscorner {
+        display: none;
+    }
+
+    .webRingLinkLeft {
+        left: 5px;
+    }
+
+    .webRingLinkRight {
+        right: 5px;
+    }
+
+    .webRingLinkLeft, .webRingLinkRight {
+        top: 60px !important;
+        font-size: 16px;
+    }
+}
+
+@media screen and (width: 1024px) and (height: 768px) {
+    :root {
+        --bg-pink: #F5A3C9;
+        --footer: #f485b9;
+        --link-unvisited: #b81c65;
+        --hover: #e05399;
+        --text: #41005f;
+    }
+
+    body::before {
+        content: "now with 500% more nya!";
+        position: absolute;
+        top: 43px;
+        left: calc(50% - 83px);
+        text-align: center;
+        animation: pulse 5s infinite;
+        font-size: 15px;
+        color: white;
+    }
+    
+ 
+    @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+    }
+    
+    hr {
+        color: white;
+    }
+
+    nav {
+        color: white;
+    }
+
+    nav a {
+        color: var(--footer);
+    }
+
+    nav a:hover {
+        color: var(--bg-pink);
+    }
+
+    .paragraph {
+        color: #41005f;
+    }
+    
+    body {
+        background-image: url(/img/nyan.gif);
+    }
+
+    @keyframes bgScroll {
+        0% {
+            background-position: -1920px;
+        }
+        100% {
+            background-position: 0;
+        }
+    }
+
+    .anguscorner {
+        margin-bottom: 35px !important;
+    }
+
+    footer {
+        background-color: #41005f !important;
+    }
+
+}
