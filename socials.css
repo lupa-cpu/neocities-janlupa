@@ -92,7 +92,7 @@ hr {
 
 #misc {
     position: relative;
-    background-image: url('win311/winlogo.gif');
+    background-image: url('images/winlogo.gif');
     border-top: thin double #b7330f;
     height: 420px;
 }
@@ -130,3 +130,54 @@ hr {
     #awards img {
         max-height: 105px;
     }
+
+.window {
+    position: relative;
+    border: 4px double black;
+    width: 94%;
+    background-color: #d6d6d6;
+    left: 3%;
+}
+
+.window_header {
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    background-color: #900;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    border-style: solid;
+    border-color: #000;
+    border-width: 0 0 1px 0;
+    cursor: default;
+    margin-bottom: 10px;
+}
+
+.window_close, .window_min, .window_max {
+    width: 24px;
+    height: 24px;
+    background-color: #eee;
+    border-style: solid;
+    border-color: #000;
+    background-position: center;
+}
+
+.window_close {
+    border-width: 0 1px 1px 0;
+    float: left;
+    background-image: url(win311/window_close.gif);
+}
+
+.window_min, .window_max {
+    border: 2px outset #fff;
+    float: right;
+}
+
+.window_min {
+    background-image: url(win311/window_min.gif);
+}
+
+.window_max {
+    background-image: url(win311/window_max.gif);
+}
