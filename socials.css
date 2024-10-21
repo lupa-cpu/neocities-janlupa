@@ -1,0 +1,132 @@
+:root {
+    --bg-pink: #DFCB8E;
+    --footer: #fff6e7;
+    --link-unvisited: #E76D83;
+    --hover: #E05353;
+    --text: #000000;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+link {
+    color: var(--link-unvisited);
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+    padding-bottom: 60px !important;
+    background-color: #DFCB8E;
+    color: #000000;
+    text-align: center;
+    overflow: auto;
+    overflow-x: hidden;
+    font-family: "abaddon";
+    font-weight: 800;
+}
+
+header h1 {
+    margin: 1%;
+    text-shadow: -3.5px -1px 0 white, 3.5px -1px 0 white, -3.5px 1px 0 white, 3.5px 1px 0 white;
+    color: var(--text);
+    background-size: 50%;
+}
+
+a:hover {
+    color: #E05353;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.webRingLinkLeft {
+    position: absolute;
+    left: 1%;
+    margin-top: 1.5%;
+
+    @media (max-width: 600px) {
+        margin-top: 12%;
+    }
+
+    font-size: 20px;
+    color: var(--link-unvisited) !important;
+    text-shadow: -1px -1px white, 1px -1px white, -1px 1px white, 1px 1px white;
+}
+
+.webRingLinkRight {
+    position: absolute;
+    right: 1%;
+    margin-top: 1.5%;
+
+    @media (max-width: 600px) {
+        margin-top: 20%;
+    }
+
+    font-size: 20px;
+    color: var(--link-unvisited) !important;
+    text-shadow: -1px -1px white, 1px -1px white, -1px 1px white, 1px 1px white;
+    font-family: "fuifont";
+}
+
+a:link {
+    color: var(--link-unvisited);
+    text-decoration: none;
+}
+
+nav {
+    font-size: large;
+}
+
+    nav a:hover {
+        color: var(--hover);
+    }
+
+hr {
+    color: var(--text);
+    opacity: 30%;
+    width: 96%;
+}
+
+
+#misc {
+    position: relative;
+    background-image: url('win311/winlogo.gif');
+    border-top: thin double #b7330f;
+    height: 420px;
+}
+
+    #misc h1 {
+        text-shadow: 4px 3px 0px #3e3e3e;
+        color: white;
+    }
+
+    #misc a {
+        color: white;
+        background-color: #00000061;
+    }
+
+    #misc .icon {
+        position: absolute;
+        width: 125px;
+        text-align: center;
+    }
+
+        #misc .icon img {
+            cursor: move;
+        }
+
+#nowwall img {
+    width: 88px;
+    height: 31px;
+}
+
+#awards {
+    display: block;
+    margin-bottom: 10px 0;
+}
+
+    #awards img {
+        max-height: 105px;
+    }
