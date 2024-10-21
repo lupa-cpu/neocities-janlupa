@@ -94,17 +94,15 @@ a:hover {
     position: absolute;
     right: 1%;
     margin-top: 1.5%;
+
     @media (max-width: 600px) {
         margin-top: 20%;
     }
+
     font-size: 20px;
     color: var(--link-unvisited) !important;
-    text-shadow:
-    -1px -1px white,
-    1px -1px white,
-    -1px  1px white,
-    1px  1px white;
-     font-family: "fuifont";
+    text-shadow: -1px -1px white, 1px -1px white, -1px 1px white, 1px 1px white;
+    font-family: "fuifont";
 }
 
 a:link {

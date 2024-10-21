@@ -1,0 +1,476 @@
+
+    body {
+      background-color: black;
+      color: red;
+      font-family: Verdana;
+      margin: 0px;
+    }
+
+    a {
+      color: #fff;  
+    }
+
+    a:visited {
+      color: #c7c7c7;  
+    }
+    
+    #main, #me, #misc, #music, #footer {
+     background-attachment:fixed; 
+    }
+
+    @keyframes dnfbg {
+      from {background-position: 0 0;}
+      to {background-position: 916px -221px;}
+    }
+    
+    #main {
+      background-image:url('images/dnf.jpg');
+      animation: dnfbg 20s linear 0s infinite;
+    }
+
+    #main h1 {
+      box-shadow: 0px 20px 20px 0px #00000099;
+      background-color: #00000099;
+    }
+
+    #misc div, #music div {
+     display: inline-block; 
+     vertical-align: middle;
+    }
+    
+    #menu {
+     background-image:url('images/lava.png');
+     height:50px;
+     border-top: thin double #b7330f;
+     
+    }
+    
+    #menu > div {
+     line-height: 50px;
+     text-align: center;
+    }
+    
+    #me {
+     background-image:url('images/space4.gif');
+     height:240px;
+     border-top: thin double #b7330f; 
+    }
+    
+    #me > div {
+     line-height: 66px;
+     padding:20px;
+     text-align: center;
+    }
+    
+    #me img {
+      float: right;
+    }
+    
+    
+    #articles {
+     background-image:url('en/halloween/2019/bg.gif');
+     border-top: thin double #b7330f; 
+     text-align: center;
+    }
+    
+    #articles > h1 {
+     color: #ffffff;
+     text-shadow: 2px 3px 0px #dd5134, -3px -3px 0px #390049;;
+     font-size: 2.5em;
+    }
+    
+    #stubs article {
+      background-color: #39004966;
+      border: 2px solid #dd5134;
+      border-radius: 10px;
+      transition: border .2s linear, background-color .2s linear;
+      display:inline-block;
+      margin: 5px 1%;
+      padding:10px;
+      height: 165px;
+      vertical-align: top;
+    }
+
+    #stubs article:hover {
+      background-color: #390049dd;
+      border:2px solid #000000;
+    }
+    
+    #stubs article hgroup {
+      border-radius: 10px;
+      width:unset;
+      height: 140px;
+    }
+
+    #articles img {
+      border-radius: 10px;
+      height:140px;
+    }
+
+    #articles > a {
+      font-size: 20px;
+      display: block;
+      padding-bottom: 4px;
+      text-align: center;
+      text-shadow: 1px 1px 1px #000;
+      text-decoration: underline;
+      background-color: #a54e4ebf;
+      color: #fff;
+      border: 2px solid #ffffff;
+      border-width: 2px 0;
+    }
+    
+    /*
+
+    #stubs article a {
+      text-decoration: none;
+      color: #000000;
+    }
+
+    #stubs article a:visited {
+      color: #333333;
+    }
+
+    #stubs article h1 {
+      padding-top: 5px;
+      text-align: center;
+      font-size: 25px;
+    }
+
+    #stubs article h6 {
+      text-align: center;
+      font-size: 15px;
+    }
+
+    #articles article {
+     display:inline-block;
+     vertical-align:top;
+     margin:5px 1%;
+     padding:10px;
+     width:48%;
+     height:135px;
+     border:2px solid #333333;
+     border-radius: 10px;
+     text-align: center;
+    }
+    
+    #articles article > a {
+	   text-decoration: none;
+	   color: #000000;
+	  }
+
+    #articles article > a:visted {
+	   text-decoration: none;
+	   color: #333333;
+	  }
+
+    #articles article hgroup {
+	   background-color: #ffffffdd;
+     border-radius: 10px;
+	   padding:10px 10px 0 10px;
+     height:90px;
+	  }
+	  */
+
+    #games {
+     position: relative;
+     background-image:url('images/wellwish.gif');
+     color: aliceblue;
+     border-top: thin double #b7330f; 
+    }
+    
+    .games_monster {
+      position: absolute;
+      left:   0px;
+      bottom: 0px;
+      cursor: crosshair;
+      transition: left 2s ease-in-out, bottom 2s ease-in-out, transform 2s ease-in-out; 
+    }
+    
+    #music {
+      background-image:url('images/rfdann.jpg');
+      color: #fff;
+      border-top: thin double #b7330f;
+    }
+    
+    #music img {
+     border-radius: 10px; 
+    }
+    
+    #holidays {
+     background-image:url('images/leavesbg.jpg');
+     color: #004c00;
+     border-top: thin double #b7330f;
+     padding-bottom:20px; 
+    }
+    
+    #holidays a {
+     color: #004c00;
+    }
+    
+    
+    
+    
+    #misc {
+     position: relative;
+     background-image:url('win311/winlogo.gif');
+     border-top: thin double #b7330f; 
+     height: 420px;
+    }
+    
+    #misc h1 {
+     text-shadow: 4px 3px 0px #3e3e3e;
+     color: white;
+    }
+    
+    #misc a {
+     color: white;
+     background-color: #00000061;
+    }
+    
+    #misc .icon {
+     position: absolute;
+     width: 125px;
+     text-align: center;
+    }
+    
+    #misc .icon img {
+     cursor: move;
+    }
+    
+    #nowwall img {
+      width:  88px;
+      height: 31px;
+    }
+
+    #awards {
+      display: block;
+      margin-bottom: 10px 0;
+    }
+    
+    #awards img {
+      max-height: 105px;
+    }
+    
+.window {
+  position: relative;
+  border: 4px double black;
+  width: 94%;
+  background-color: #d6d6d6;
+  left: 3%;
+}
+
+.window_header {
+  width:100%;
+  height: 24px;
+  line-height: 24px;
+  background-color:#900;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  border-style: solid;
+  border-color: #000;
+  border-width: 0 0 1px 0;
+  cursor: default;
+  margin-bottom: 10px;
+}
+
+.window_close, .window_min, .window_max {
+  width:24px;
+  height: 24px;
+  background-color:#eee;
+  border-style: solid;
+  border-color: #000;
+  background-position: center;
+}
+
+.window_close {
+  border-width: 0 1px 1px 0;
+  float:left;
+  background-image: url(win311/window_close.gif);
+}
+
+.window_min, .window_max {
+  border: 2px outset #fff;
+  float:right;
+}
+
+.window_min {
+  background-image: url(win311/window_min.gif);
+}
+
+.window_max {
+  background-image: url(win311/window_max.gif);
+}
+
+    
+    
+    
+    #links {
+     background-image: url('images/stars_ani_bg.gif');
+     background-size: cover;
+     background-position: center;
+     color: #fff;
+     border-top: thin double #b7330f; 
+     padding: 10px;
+    }
+
+    #footer {
+     background-image:url('images/space4.gif');
+     border-top: thin double #b7330f; 
+    }
+    
+    #dopefish {
+     position: relative;
+     margin-left:30px;
+     transition: right 2s ease-in-out; 
+     right: 0px;
+    }
+
+    #hitcount img {
+      border: 1px solid #000;
+      margin-bottom: -5px;
+    }
+ 
+    #discordbox {
+      clear:both;
+    }
+    
+    #wave {
+      position: fixed;
+      top:   -200px;
+      right: -200px;
+      transition: top 3s linear, right 3s linear;
+    }
+    
+
+
+
+
+
+  @media only screen and (min-width: 1000px) {
+    
+    .no-desktop {
+      display: none;
+    }
+    
+    /*  No point with lightSlider
+    #stubs article {
+      display:inline-block;
+      margin: 5px 1%;
+      padding:10px;
+      height: 165px;
+      vertical-align: top;
+    }
+
+    #stubs article hgroup img {
+      height:140px;
+    }
+    */
+
+    #games {
+      height: 500px; 
+    }
+
+    #dopefish {
+      float:right;
+    }
+    
+    .window {
+      height: 270px;
+    }
+    
+    #wave {
+      width:  200px;
+      height: 200px;
+    }
+    
+    #discordbox iframe {
+      width:500px;
+      height:300px;
+    }
+    
+  }
+
+
+
+   
+   
+  @media only screen and (max-width: 999px) {
+    
+    .no-mobile {
+      display: none;
+    }
+    
+    #main center h1 img:nth-of-type(1) {
+      display: none;
+    }
+        
+    #main center h1 img:nth-of-type(2) {
+      width:12%;
+    }
+        
+    #main center h1 img:nth-of-type(3) {
+      width:15%;
+    }
+        
+    #main center h1 img:nth-of-type(4) {
+      width:65%;
+    }
+        
+    #main center h1 img:nth-of-type(5) {
+      display: block;
+    }
+    
+    #me > div {
+     line-height: 25px;
+     font-size: .9em;
+     clear: both;
+    }
+    
+    .page_block {
+      height: unset!important;
+    }
+    
+    #misc .icon {
+      position: unset;
+      width: 32%;
+      margin-bottom: 10px;
+    }
+    
+    .window {
+      margin-bottom: 10px;
+    }
+    
+    #articles {
+     padding-bottom: 1px;
+    }
+    /*
+    #stubs article {
+      display:inline-block;
+      padding:10px;
+      width:50%;
+    }
+    
+    #stubs article hgroup {
+      height: unset;
+    }
+
+    #stubs article hgroup img {
+      display: block;
+      width: 100%;
+      border-radius: 10px;
+    }
+    
+    #stubs article:nth-child(6) {
+      display: inline-block;
+    }
+    */
+
+    #discordbox iframe {
+      width:100%;
+      height:300px;
+    }
+  
+  }
+    

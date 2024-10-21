@@ -1,0 +1,17 @@
+var q_cats = [
+["Mtn Dew - Flamin Hot","4/21/2022"],
+["Pepsi Draft Cola","4/22/2022"],
+["Taco Truck Jellybeans","4/28/2022"],
+["Coca-Cola Starlight","5/4/2022"],
+["Sour Patch Cola Drops","5/6/2022"],
+["Red Bull Summer 2022","5/16/2022"],
+["Spooky Bath & Body Works 2022","7/19/2022"],
+["VooDew 4","9/13/2022"],
+["Ghost Pepper Whopper","10/17/2022"],
+["Pepsi x Peeps","4/12/2023"],
+["Spiderverse Whopper","7/21/2023"],
+["Spooky Bath & Body Works 2023","7/25/2023"],
+["Oreo X Coke","9/5/2024"],
+["Wednesday Whopper","10/11/2024"],
+["Munchkin Bucket","10/16/2024"]
+];

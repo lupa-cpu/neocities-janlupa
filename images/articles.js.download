@@ -1,0 +1,29 @@
+var tmp_arr = [];
+for (i = cats.length-1; i >= cats.length-10; i--) {
+  tmp_arr.push([cats[i][2],cats[i][0],cats[i][1],0]);
+}
+for (i = q_cats.length-1; i >= q_cats.length-10; i--) {
+  if (i>=0) {
+  tmp_arr.push([q_cats[i][1],i,q_cats[i][0],1]);
+  }
+}
+
+tmp_arr.sort(function(a, b){
+    const date1 = new Date(a[0])
+    const date2 = new Date(b[0])
+    
+    return date2 - date1;
+});
+
+
+document.write(`<section id="stubs">`);
+for (i = 0; i <= 10; i++) {
+	document.write(`<li><article> <hgroup onmouseover="article_title('`+tmp_arr[i][2]+`')" onmouseout="article_title()">`);
+   if (tmp_arr[i][3] == 0) {
+    document.write(`<a href="en/`+tmp_arr[i][1]+`/"><img src="en/`+tmp_arr[i][1]+`/th.jpg"/></a>`);
+   } else {
+    document.write(`<a href="en/q/?q=`+tmp_arr[i][1]+`"><img src="en/q/`+tmp_arr[i][1]+`_th.jpg"/></a>`);
+   }
+ document.write(`</hgroup></article></li>`);
+}
+document.write(`</section>`);
