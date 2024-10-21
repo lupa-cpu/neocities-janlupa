@@ -111,10 +111,12 @@ hr {
         position: absolute;
         width: 125px;
         text-align: center;
+        position: absolute;
     }
 
         #misc .icon img {
             cursor: move;
+            position: absolute;
         }
 
 #nowwall img {
