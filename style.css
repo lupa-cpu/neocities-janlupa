@@ -32,7 +32,7 @@ body {
 }
 
 body {
-    background-image: url(/img/lupa.png);
+    background-image: url(/img/error2.png);
     animation: bgScroll 80s linear infinite;
     background-size: 50%;
     background-attachment: fixed;
