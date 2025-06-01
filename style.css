@@ -34,9 +34,9 @@ body {
 body {
     background-image: url(/img/error2large.png);
     /*  animation: bgScroll 80s linear infinite; */
-    background-size: 50%;
+    background-size: 100%;
     background-attachment: fixed;
-    background-repeat: repeat;
+    /*background-repeat: repeat; */
     image-rendering: pixelated;
     
 }
