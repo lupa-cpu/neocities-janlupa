@@ -21,11 +21,11 @@ body {
     min-height: 100%;
     padding-bottom: 60px !important;
     background-color: #0f0e0e;
-    color: #000000;
+    color: #ffffff;
     text-align: center;
     overflow: auto;
     overflow-x: hidden;
-    font-family: "angel wish";
+    font-family: "alice";
     font-weight: 800;
 }
 
@@ -164,7 +164,7 @@ footer {
 
 
 .paragraph {
-    background-color: #9c0b0b;
+    background-color: #0f0e0e;
     width: 50%;
     margin: 0 auto;
     margin-bottom: 60px;
@@ -210,7 +210,7 @@ footer {
 }
 
 .blog {
-    background-color: #9c0b0b;
+    background-color: #0f0e0e;
     width: 50%;
     margin: 0 auto;
     margin-bottom: 60px;
