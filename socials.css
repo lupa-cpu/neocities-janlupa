@@ -1,0 +1,38 @@
+:root {
+    --bg-pink: #0f0e0e;
+    --footer: #9c0b0b;
+    --link-unvisited: #E76D83;
+    --hover: #E05353;
+    --text: #000000;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+link {
+    color: var(--link-unvisited);
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+    padding-bottom: 60px !important;
+    background-color: #0f0e0e;
+    color: #ffffff;
+    text-align: center;
+    overflow: auto;
+    overflow-x: hidden;
+    font-family: "alice";
+    font-weight: 800;
+}
+
+body {
+    background-image: url(/img/vista.jpg);
+    /*  animation: bgScroll 80s linear infinite; */
+    background-size: 100%;
+    background-attachment: fixed;
+    /*background-repeat: repeat; */
+    image-rendering: pixelated;
+}
