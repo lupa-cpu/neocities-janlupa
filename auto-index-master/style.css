@@ -1,6 +1,12 @@
 body {
-    font-family: BlinkMacSystemFont, "Segoe UI", sans-serif;
-    font-size: 1.1em; padding: 0 1em;
+    html
+
+{
+    font-family: "hypnobold";
+    font-weight: 800;
+    background-color: #000000;
+    color: #FFFFFF;
+}
 }
 a:not(:hover) {text-decoration: none;}
 ul {padding: 0;}
