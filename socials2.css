@@ -208,19 +208,19 @@ html, body {
 
 /* Scaling container for the fixed resolution design */
 .fixed-container {
-  width: 1920px;
-  height: 991px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform-origin: center center;
-  /* Scale will be applied via JavaScript */
-  overflow: hidden;
-  background-image: url('socials/bliss.webp');
-  background-size: cover;
-  background-position: center;
-  image-rendering: pixelated;
-  image-rendering: crisp-edges;
+    width: 1920px;
+    height: 991px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center center;
+    /* Scale will be applied via JavaScript */
+    overflow: hidden;
+    background-image: url('img/auroura.png');
+    background-size: cover;
+    background-position: center;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
 }
 
 /* Desktop Icons container */
