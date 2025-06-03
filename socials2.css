@@ -216,7 +216,7 @@ html, body {
   transform-origin: center center;
   /* Scale will be applied via JavaScript */
   overflow: hidden;
-  background-image: url('site_images/bliss.webp');
+  background-image: url('socials/bliss.webp');
   background-size: cover;
   background-position: center;
   image-rendering: pixelated;
