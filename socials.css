@@ -115,3 +115,72 @@ footer {
     align-items: center;
     /* flex-wrap: nowrap; */
 }
+@media (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden !important;
+        margin-bottom: 50% !important;
+    }
+
+    .paragraph {
+        width: 80% !important;
+    }
+
+    .blog {
+        width: 80% !important;
+    }
+
+    .scrollingBG {
+        background-size: cover;
+    }
+
+    nav {
+        margin-bottom: 40px;
+    }
+
+    footer {
+        position: absolute !important;
+        max-width: max-content !important;
+        overflow: hidden !important;
+    }
+
+    .sandwich {
+        display: none;
+    }
+
+    .webRingLinkLeft {
+        left: 5px;
+    }
+
+    .webRingLinkRight {
+        right: 5px;
+    }
+
+    .webRingLinkLeft, .webRingLinkRight {
+        top: 60px !important;
+        font-size: 16px;
+    }
+}
+
+@media screen and (width: 1024px) and (height: 768px) {
+    :root {
+        --bg-pink: #F5A3C9;
+        --footer: #f485b9;
+        --link-unvisited: #b81c65;
+        --hover: #e05399;
+        --text: #41005f;
+    }
+
+    body::before {
+        content: "now with 500% more nya!";
+        position: absolute;
+        top: 43px;
+        left: calc(50% - 83px);
+        text-align: center;
+        animation: pulse 5s infinite;
+        font-size: 15px;
+        color: white;
+    }
+    
+ 
