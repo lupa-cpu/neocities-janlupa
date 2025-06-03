@@ -1,0 +1,1057 @@
+/* Reset margins/padding and prevent scrollbars */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+}
+
+/* Windows 7 Taskbar Styles */
+.taskbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(to bottom, #f8f8f8, #e3e3e3, #d9d9d9);
+  border-top: 1px solid #aeaeae;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Start Button */
+.start-button {
+  height: 100%;
+  margin-left: 2px;
+  margin-right: 10px;
+}
+
+.start-button-inner {
+  height: 36px;
+  padding: 0 10px;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to bottom, #6bb2f8, #106ede);
+  border: 1px solid #084fa3;
+  border-radius: 3px;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.start-button-inner:hover {
+  background: linear-gradient(to bottom, #7cc1ff, #2280e9);
+}
+
+.start-button-inner:active {
+  background: linear-gradient(to bottom, #1863c6, #3b95f5);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.start-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* Start Menu */
+.start-menu {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 360px;
+  background: linear-gradient(135deg, #ffffff 0%, #e9eaed 50%, #d3d7dd 100%);
+  border: 1px solid #8f9dac;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1001;
+  display: none; /* Hidden by default */
+  animation: slideUp 0.2s ease-out;
+  overflow: hidden;
+}
+
+/* Start Menu Header */
+.start-menu-header {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dfe2e7;
+  background: linear-gradient(to bottom, #f5f6f8, #ebedf0);
+}
+
+.user-pic {
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  margin-right: 10px;
+  border: 1px solid #cbd2df;
+}
+
+.start-menu-header span {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #3e5070;
+}
+
+/* Start Menu Items */
+.start-menu-items {
+  padding: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list li {
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.menu-list li:hover:not(.divider):not(.credits) {
+  background-color: rgba(49, 106, 197, 0.2);
+}
+
+.menu-list li img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+.menu-list li a {
+  text-decoration: none;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  flex-grow: 1;
+}
+
+.menu-list li.divider {
+  height: 1px;
+  background-color: #d1d1d1;
+  margin: 5px 0;
+  padding: 0;
+}
+
+.menu-list li.credits {
+  padding: 5px 10px;
+  color: #555;
+  font-style: italic;
+}
+
+.menu-list li.credits a {
+  color: #0078d7;
+  text-decoration: none;
+}
+
+.menu-list li.credits a:hover {
+  text-decoration: underline;
+}
+
+/* Taskbar Items */
+.taskbar-items {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* System Tray */
+.system-tray {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.time-display {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  color: #333;
+}
+
+/* Animation for Start Menu */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Show Start Menu */
+.start-menu.show {
+  display: block;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Scaling container for the fixed resolution design */
+.fixed-container {
+  width: 1920px;
+  height: 991px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  /* Scale will be applied via JavaScript */
+  overflow: hidden;
+  background-image: url('site_images/bliss.webp');
+  background-size: cover;
+  background-position: center;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* Desktop Icons container */
+.desktop-icons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+/* Individual desktop icon - base style */
+.desktop-icon {
+  position: absolute;
+  width: 90px;
+  height: 110px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Windows 7 standard grid is 80x80 with spacing, so we'll use a 100x120 grid
+   to account for icon size + spacing, positioned on these grid points */
+
+/* First row */
+.desktop-icon[data-icon="035"] {
+  top: 20px;
+  left: 20px;
+}
+
+.desktop-icon[data-icon="botw"] {
+  top: 20px;
+  left: 120px;
+}
+
+.desktop-icon[data-icon="gordon"] {
+  top: 20px;
+  left: 1680px;
+}
+
+/* Second row */
+.desktop-icon[data-icon="mae"] {
+  top: 140px;
+  left: 20px;
+}
+
+.desktop-icon[data-icon="majora"] {
+  top: 140px;
+  left: 1680px;
+}
+
+/* Third row */
+.desktop-icon[data-icon="sam"] {
+  top: 260px;
+  left: 20px;
+}
+
+.desktop-icon[data-icon="sonic"] {
+  top: 260px;
+  left: 1680px;
+}
+
+/* Fourth row */
+.desktop-icon[data-icon="toriel_static"] {
+  top: 380px;
+  left: 1680px;
+}
+
+.desktop-icon[data-icon="glados"] {
+  top: 380px;
+  left: 120px;
+}
+
+/* Fifth row */
+.desktop-icon[data-icon="nyan"] {
+  top: 500px;
+  left: 20px;
+}
+
+/* Sixth row */
+.desktop-icon[data-icon="jax"] {
+  top: 620px;
+  left: 1680px;
+}
+
+.desktop-icon[data-icon="stolas"] {
+  top: 620px;
+  left: 20px;
+}
+
+/* Icon wrapper */
+.icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* Icon image */
+.icon-image {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+/* Icon label (text beneath icon) */
+.icon-label {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 11px;
+  line-height: 1.2;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  width: 100%;
+  word-break: break-word;
+}
+
+/* Windows 7 selection effect */
+.desktop-icon:hover {
+  background-color: rgba(49, 106, 197, 0.2);
+  border: 1px solid rgba(49, 106, 197, 0.4);
+  padding: 0;
+}
+
+.desktop-icon:active {
+  background-color: rgba(49, 106, 197, 0.4);
+}
+
+/* Selected icon */
+.desktop-icon.selected {
+  background-color: rgba(49, 106, 197, 0.3);
+  border: 1px solid rgba(49, 106, 197, 0.6);
+  padding: 0;
+}
+
+/* Disabled icon during animations */
+.desktop-icon.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Windows 7 Styled Central Content Container */
+.container {
+  width: 900px;
+  margin: 0 auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  overflow: hidden; /* Changed from visible */
+  /* Making the container feel more like a real window */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.3s;
+}
+
+/* Enhanced shadow when dragging to give depth */
+.container.dragging {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Windows 7 maximized window style */
+.window.maximized {
+  width: 90% !important;
+  height: 90% !important;
+  max-width: 1200px !important;
+}
+
+/* Windows 7 scrollbar styling */
+.container .window-body {
+  overflow: visible; /* Change from auto to visible to prevent scrolling */
+  height: auto; /* Auto height instead of calculated */
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+/* Ensure proper scrollbar display in all .window-body elements with has-scrollbar class */
+.window-body.has-scrollbar {
+  overflow: auto;
+}
+
+/* Header styling - Windows 7 style */
+.win7-header {
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+/* Space banner container with animated background */
+.space-banner-container {
+  width: 65%;
+  max-width: 600px;
+  height: 120px; /* Further reduced from 140px */
+  margin: 0 auto 8px;
+  position: relative;
+  border: 1px solid #bfbfbf;
+  box-shadow: inset 0 0 0 1px #f2f2f2, 0 0 0 2px #0078d7, 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 6px;
+  border-radius: 2px;
+  background-color: #000;
+  background-image: url('site_images/space_seamless.gif');
+  background-repeat: repeat-x;
+  background-size: auto 100%; /* Scale background to fit height */
+  animation: space-scroll 15s linear infinite;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Animation for scrolling space background */
+@keyframes space-scroll {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -320px; /* Width of space_seamless.gif */
+  }
+}
+
+/* Slider animation */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Slider container styles */
+.slider-container {
+  background: linear-gradient(to bottom, #f0f1f5, #e8eaf0);
+  border: 1px solid #d1d9e0;
+  border-radius: 3px;
+  padding: 8px;
+  margin: 20px 0;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  height: 36px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.slider-content {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  padding: 5px;
+  animation: slide 30s linear infinite;
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  font-size: 14px;
+  line-height: 20px;
+  left: 0;
+}
+
+/* Create a copy of the content for seamless looping */
+.slider-content::after {
+  content: attr(data-content);
+  position: absolute;
+  white-space: nowrap;
+  left: 100%;
+  top: 0;
+  padding: 5px;
+}
+
+/* Directory styling */
+.tree-view {
+  margin: 15px 0;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.tree-view li {
+  margin: 8px 0;
+  line-height: 1.4;
+  position: relative;
+}
+
+.tree-view li a {
+  position: relative;
+  padding-left: 32px;
+  display: inline-block;
+}
+
+.tree-view li a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-size: 16px 16px !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 16px;
+  max-height: 16px;
+  overflow: hidden;
+}
+
+.tree-view li a[href="portfolio.html"]::before {
+  background: url('site_images/attachment.png') no-repeat center;
+}
+
+.tree-view li a[href="about.html"]::before {
+  background: url('site_images/info.png') no-repeat center;
+}
+
+.tree-view li a[href="contact.html"]::before {
+  background: url('site_images/user_accounts.png') no-repeat center;
+}
+
+.tree-view li a[href="blog.html"]::before {
+  background: url('site_images/blogging.png') no-repeat center;
+}
+
+.tree-view a {
+  color: #0078d7;
+  text-decoration: none;
+}
+
+.tree-view a:hover {
+  text-decoration: underline;
+}
+
+/* Disclaimer styling */
+.disclaimer {
+  background: linear-gradient(to bottom, #f8f8f8, #f0f0f0);
+  border-radius: 3px;
+  padding: 10px 15px; /* Add horizontal padding to prevent content from touching edges */
+  margin: 20px 5px; /* Add horizontal margin for better spacing */
+  border: 1px solid #e0e0e0; /* Add border for better definition */
+}
+
+.disclaimer h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.disclaimer p {
+  margin-bottom: 0;
+  color: #666;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.subtitle-container {
+  display: inline-block;
+  padding: 5px 15px;
+  background: linear-gradient(to bottom, #fafbfc, #e6eaf0);
+  border: 1px solid #d1d9e0;
+  border-radius: 4px;
+  margin: 8px auto 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.win7-header h2 {
+  margin: 0;
+  font-style: italic;
+  color: #0078d7;
+  font-size: 1.2rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.win7-icon {
+  display: inline-block;
+  margin-right: 8px;
+  color: #0078d7;
+  font-size: 1.2rem;
+}
+
+/* Main area (columns) */
+main {
+  display: flex;
+  gap: 10px;
+  padding: 5px 0;
+  flex: 1;
+  align-items: stretch;
+}
+
+/* Left Column */
+.left-column {
+  flex: 0 0 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Fix navigation menu */
+.directory .window-body {
+  padding: 8px;
+  height: auto;
+}
+
+.directory menu[role="tablist"] {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.directory button[role="tab"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+/* Tree view styling for navigation */
+.tree-view {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.tree-view li {
+  margin: 5px 0;
+}
+
+.directory .tree-view a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.directory .tree-view a:hover {
+  background-color: rgba(120, 200, 255, 0.3);
+}
+
+.directory .tree-view a:active {
+  background-color: rgba(120, 200, 255, 0.5);
+}
+
+/* Comment container */
+.comment-container {
+  flex: 1;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.comment-container .window-body {
+  padding: 8px !important;
+  background-color: white !important;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Remove scrollbar from comment container */
+.comment-container .window-body.has-scrollbar {
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+}
+
+.comment-container iframe {
+  flex-grow: 1;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden;
+  min-height: 320px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.comment-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+
+.comment-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.comment-container textarea {
+  width: 100%;
+  flex: 1;
+  min-height: 60px;
+  resize: none;
+}
+
+.comment-container .field-row {
+  margin-top: 10px;
+}
+
+/* Content area */
+.content {
+  flex: 1;
+}
+
+.content .window-body {
+  padding: 20px;
+  height: auto;
+  min-height: 250px;
+  max-height: 455px; /* Increased max-height */
+}
+
+.content h2 {
+  color: #0078d7;
+  font-size: 16px;
+  margin: 15px 0 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.content h3 {
+  color: #444;
+  font-size: 14px;
+  margin: 15px 0 8px;
+}
+
+.content p {
+  margin: 10px 0;
+  line-height: 1.5;
+  color: #333;
+}
+
+.content p:first-of-type {
+  color: #0078d7;
+  font-size: 16px;
+  margin: 15px 0 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e1e1e1;
+  font-weight: bold;
+}
+
+.content h2 {
+  margin-top: 0;
+}
+
+/* Widgets column */
+.widgets {
+  flex: 0 0 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.widget .window-body {
+  padding: 8px;
+  height: auto;
+}
+
+.widget h3 {
+  margin-top: 0;
+}
+
+.links-box a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.links-box a:hover {
+  text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 5px 0;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  border-top: 1px solid #d9d9d9;
+}
+
+/* Responsive adjustments for Windows 7 styling */
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+  }
+  .left-column, .widgets {
+    flex: 1 0 auto;
+  }
+}
+
+/* Walker styling for animated characters */
+.walker {
+  position: fixed;
+  width: auto;
+  z-index: 3;
+  pointer-events: auto;
+  transition-property: transform;
+  transition-timing-function: linear;
+  transition-duration: 8s;
+}
+
+.stolas-throw {
+  position: fixed;
+  z-index: 3;
+  pointer-events: auto;
+  transition: transform 2s linear;
+  top: 50%;
+  transform-origin: center center;
+}
+
+/* Windows 7 adjustments */
+.window {
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
+}
+
+/* Reset any custom background for the main container to let 7.css handle the border styling */
+body > .fixed-container > .container.window {
+  background-image: none !important;
+  background-color: white !important; /* Match navigation container background */
+}
+
+/* Match the title bar styling to navigation container */
+body > .fixed-container > .container.window > .title-bar {
+  background-image: none !important; /* Remove graph paper from title bar */
+}
+
+/* Apply graph paper ONLY to the window-body content area */
+body > .fixed-container > .container.window > .window-body {
+  background-image: url('site_images/graph_paper.png') !important;
+  background-repeat: repeat !important;
+  background-size: auto !important;
+}
+
+/* Ensure all inner containers have white backgrounds */
+.directory.window,
+.comment-container.window,
+.content.window,
+.widget.window {
+  background-color: white !important;
+  background-image: none !important;
+}
+
+/* Ensure inner window bodies have white backgrounds */
+.directory .window-body,
+.content .window-body,
+.widget .window-body {
+  background-color: white !important;
+  background-image: none !important;
+}
+
+/* Remove background from comment container */
+.comment-container .window-body {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* Add some content to test scrollbars */
+.content .window-body.has-scrollbar {
+  min-height: 250px; /* Reduced from 300px */
+  overflow-y: auto;
+}
+
+/* Keep the space banner background unchanged */
+.space-banner-container {
+  background-image: url('site_images/space_seamless.gif') !important;
+  background-repeat: repeat-x !important;
+  background-size: auto 100% !important;
+  animation: space-scroll 15s linear infinite !important;
+}
+
+/* Adjustments for nested windows to work better */
+.left-column .window,
+.widgets .window {
+  margin: 0 0 10px 0;
+  height: auto;
+}
+
+/* Make sure nested windows don't disappear */
+.widgets .window .window-body,
+.content .window-body {
+  height: auto;
+  min-height: 50px;
+  padding: 10px;
+}
+
+/* Special handling for comment container in left column */
+.left-column .comment-container .window-body {
+  padding: 0 !important;
+}
+
+.window .title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Ensure the Windows 7 title bar controls are properly spaced */
+.title-bar-controls {
+  display: flex;
+}
+
+.title-bar-controls button {
+  margin-left: 2px;
+}
+
+/* Field row for form elements */
+.field-row-stacked {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Add some Windows 7 specific styling */
+hr {
+  border: none;
+  border-top: 1px solid #d9d9d9;
+  margin: 15px 0;
+}
+
+/* Windows 7 Music Player Styling */
+.music-box .window-body {
+  padding: 2px !important;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: linear-gradient(to bottom, #f0f1f5, #e8eaf0) !important;
+}
+
+/* Media progress slider */
+.media-progress {
+  width: 100%;
+  padding: 0 2px;
+}
+
+.media-progress input[type="range"],
+.volume-control input[type="range"] {
+  width: 100%;
+  height: 15px;
+  margin: 0;
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+.media-progress input[type="range"]::-webkit-slider-thumb,
+.volume-control input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 15px;
+  background: #6badf6;
+  border: 1px solid #3c7fb1;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-top: -5px;
+  transform: translateY(-1px); /* Adjust slightly upwards */
+}
+
+.media-progress input[type="range"]::-webkit-slider-runnable-track,
+.volume-control input[type="range"]::-webkit-slider-runnable-track {
+  height: 5px;
+  background: linear-gradient(to bottom, #d4d4d4, #f0f0f0);
+  border: 1px solid #a0a0a0;
+  border-radius: 2px;
+}
+
+/* Also ensure vertical alignment for Firefox and other browsers */
+.media-progress input[type="range"]::-moz-range-thumb,
+.volume-control input[type="range"]::-moz-range-thumb {
+  width: 10px;
+  height: 15px;
+  background: #6badf6;
+  border: 1px solid #3c7fb1;
+  border-radius: 2px;
+  cursor: pointer;
+  transform: translateY(0);
+}
+
+.media-progress input[type="range"],
+.volume-control input[type="range"] {
+  display: flex;
+  align-items: center;
+}
+
+/* Media controls */
+.media-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2px;
+  padding: 2px;
+}
+
+.media-button {
+  min-width: 20px;
+  height: 20px;
+  padding: 0 2px;
+  font-size: 0.65rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.volume-control {
+  flex: 1;
+  max-width: 50px;
+  margin-left: 5px;
+}
