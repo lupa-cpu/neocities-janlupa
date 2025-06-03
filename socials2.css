@@ -1055,3 +1055,11 @@ hr {
   max-width: 50px;
   margin-left: 5px;
 }
+.os-tan {
+    position: absolute;
+    bottom: 140px;
+    left: -768px;
+    z-index: 99 !important;
+    scale: 1;
+    overflow: hidden;
+}
