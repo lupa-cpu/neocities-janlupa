@@ -361,10 +361,10 @@ html, body {
 }
 
 /* Disabled icon during animations */
-.desktop-icon.disabled {
+/* .desktop-icon.disabled {
   opacity: 0.5;
   pointer-events: none;
-}
+} */
 
 /* Windows 7 Styled Central Content Container */
 .container {
