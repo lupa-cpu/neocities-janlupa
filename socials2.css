@@ -237,7 +237,7 @@ html, body {
   width: 90px;
   height: 110px;
   cursor: pointer;
-  user-select: none;
+  
 }
 
 /* Windows 7 standard grid is 80x80 with spacing, so we'll use a 100x120 grid
