@@ -361,10 +361,10 @@ html, body {
 }
 
 /* Disabled icon during animations */
-/* .desktop-icon.disabled {
+.desktop-icon.disabled {
   opacity: 0.5;
   pointer-events: none;
-} */
+}
 
 /* Windows 7 Styled Central Content Container */
 .container {
@@ -380,20 +380,6 @@ html, body {
   /* Making the container feel more like a real window */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   transition: box-shadow 0.3s;
-}
-.socialscontainer {
-    width: 450px;
-    margin: 0 auto;
-    height: auto;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    overflow: hidden; /* Changed from visible */
-    /* Making the container feel more like a real window */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-    transition: box-shadow 0.3s;
 }
 
 /* Enhanced shadow when dragging to give depth */
