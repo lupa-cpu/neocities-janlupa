@@ -6,7 +6,7 @@
 
 let cur_song = new Audio();
 
-playSound("audio/vistalogon.mp3", 40);
+playSound("/audio/vistalogon.mp3", 40);
 
 // plays the audio of the given file-path
 function playSound(path="", volume=100) {
